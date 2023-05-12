@@ -37,13 +37,19 @@
 
     <main class="mt-1 row">
 
-        <video style="max-height: 720px;" autoplay controls src="{{ movie.link }}"></video>
+        <video style="max-height: 720px;" autoplay controls>
+            <source src="{{ movie.link }}" type="video/mp4">
+        </video>
 
         <h1 class="mt-3 fs-5 fw-bold">{{ movie.title }}</h1>
 
         <p>{{ movie.description }}</p>
 
     </main>
+
+    <footer>
+        <address class="small text-secondary">&copy; 2023 Шохрух Рустамалиев</address>
+    </footer>
 
 </body>
 
